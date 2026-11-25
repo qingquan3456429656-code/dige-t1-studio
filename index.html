@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#17201b" />
+    <title>递格 T1 · 下一站，装配线。</title>
+    <meta
+      name="description"
+      content="递格 T1 线边取送机器人。探索整箱补料、空箱回收、异常恢复与交付能力。"
+    />
+    <link rel="icon" href="./deck/media/icon.png" />
+    <link rel="stylesheet" href="./deck/media/type.css" />
+    <link rel="stylesheet" href="./poster.css" />
+  </head>
+  <body>
+    <a class="skip" href="#motion">跳到作业演示</a>
+    <main>
+      <section class="hero" aria-labelledby="headline">
+        <div class="hero-art">
+          <img
+            src="./deck/media/workshop.webp"
+            width="1672"
+            height="941"
+            alt="递格 T1 在电子装配车间的工业设计概念图"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="shade"></div>
+        <header>
+          <a class="brand" href="#headline" aria-label="递格 T1 海报首页"
+            ><i class="logo"></i>递格 <span>TOTE RELAY</span></a
+          >
+          <nav aria-label="主导航">
+            <a href="#motion">作业演示</a><a href="#capacity">产能测算</a
+            ><a class="deck-link" href="./deck/#/1">10 页产品演示 ↗</a>
+          </nav>
+        </header>
+        <div class="hero-copy">
+          <p class="eyebrow"><i></i>递格 T1 · 线边取送机器人</p>
+          <h1 id="headline">
+            <span>下一站，</span><span>装配线<em>。</em></span>
+          </h1>
+          <p class="hero-lead">
+            认准箱号，接稳托盘。<br />把整箱零件送到工位，再接回用完的空箱。
+          </p>
+          <a class="watch" href="#motion"
+            ><b aria-hidden="true">▶</b> 看一次取送
+            <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div class="hero-foot">
+          <b>T1 <i>/</i> TOTE TRANSFER ROBOT</b><span>工业设计概念图</span>
+        </div>
+      </section>
+      <section class="stats wrap" aria-label="工程设计目标">
+        <div class="stat-label">
+          <i></i><strong>设计目标</strong><span>基准工况 · 待样机验证</span>
+        </div>
+        <div>
+          <strong>20<small>kg</small></strong
+          ><span>单箱额定总重 · 含箱盘</span>
+        </div>
+        <div>
+          <strong>350–850<small>mm</small></strong
+          ><span>可对接承载面高度</span>
+        </div>
+        <div>
+          <strong><em>≥</em>6<small>h</small></strong
+          ><span>单次充电连续作业</span>
+        </div>
+        <div>
+          <strong>17.0<small>箱/h</small></strong
+          ><span>50 m 单程 · 等待 15 s</span>
+        </div>
+      </section>
+      <section id="mechanism" class="mechanism wrap">
+        <div class="mechanism-intro">
+          <p class="eyebrow"><i></i>取放机构</p>
+          <h2>接稳，再出发。</h2>
+          <p>
+            牵引钩咬合转接托盘。站轨和车上托台接续支承，<br
+              class="wide"
+            />整箱零件沿同一高度移交。
+          </p>
+        </div>
+        <div class="mechanism-grid">
+          <figure class="macro">
+            <img
+              src="./deck/media/coupling.webp"
+              width="1536"
+              height="1024"
+              loading="lazy"
+              alt="转接托盘、正锁牵引钩与站轨接口概念特写"
+            />
+            <button
+              type="button"
+              class="pin p0"
+              data-pick="0"
+              aria-label="查看转接托盘"
+              aria-pressed="false"
+            >
+              1</button
+            ><button
+              type="button"
+              class="pin p1"
+              data-pick="1"
+              aria-label="查看牵引钩"
+              aria-pressed="true"
+            >
+              2</button
+            ><button
+              type="button"
+              class="pin p2"
+              data-pick="2"
+              aria-label="查看站口导轨"
+              aria-pressed="false"
+            >
+              3
+            </button>
+          </figure>
+          <div class="parts">
+            <div class="part-nav" role="group" aria-label="选择机构部件">
+              <button data-pick="0" aria-pressed="false">
+                <small>01</small>转接托盘</button
+              ><button data-pick="1" aria-pressed="true">
+                <small>02</small>正锁牵引钩</button
+              ><button data-pick="2" aria-pressed="false">
+                <small>03</small>站口导轨
+              </button>
+            </div>
+            <div class="part-detail" aria-live="polite">
+              <strong>680 <small>mm</small></strong>
+              <p>水平伸缩行程。钩锁、重量与到位信号共同确认整箱已上车。</p>
+            </div>
+            <dl class="print-parts">
+              <div>
+                <dt>01　转接托盘</dt>
+                <dd>620 × 420 mm</dd>
+              </div>
+              <div>
+                <dt>02　水平牵引行程</dt>
+                <dd>680 mm</dd>
+              </div>
+              <div>
+                <dt>03　站口净宽</dt>
+                <dd>≥450 mm</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <section id="motion" class="motion-sec">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow"><i></i>作业仿真</p>
+              <h2>跟一箱料，走一程。</h2>
+            </div>
+            <p>
+              切换补料或回空，在时间轴上查看对位、牵引和交付。<br
+                class="wide"
+              />也可以让工位暂时被占，观察车辆在哪里等待。
+            </p>
+          </div>
+          <tote-mission autoplay></tote-mission
+          ><noscript
+            ><p>
+              取箱前核对箱号和站口。车端空载、工位有箱后登记交付。启用
+              JavaScript 可操作仿真。
+            </p></noscript
+          >
+        </div>
+      </section>
+      <section id="capacity" class="calc-sec wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><i></i>单车节拍</p>
+            <h2>这条线，一小时几箱？</h2>
+          </div>
+          <p>
+            按载箱去程、空车返程估算。<br />平均车速 0.8 m/s，两端取放各 20
+            s，利用率 85%。
+          </p>
+        </div>
+        <line-budget></line-budget
+        ><noscript
+          ><p>基准单程 50 m，常规等待 15 s，预计 17.0 箱/h。</p></noscript
+        >
+        <p class="fine">独立回空工单、充电与计划停线另计。</p>
+      </section>
+      <section class="print-flow">
+        <h2>一箱料的交付顺序</h2>
+        <ol>
+          <li>
+            <b>识站核箱</b>
+            <p>核对工单、站号与箱号，调整对接位置。</p>
+          </li>
+          <li>
+            <b>牵引锁箱</b>
+            <p>牵引托盘上车，称重和到位信号确认装载。</p>
+          </li>
+          <li>
+            <b>载箱转运</b>
+            <p>锁定托盘，降至 350 mm 运输位后驶向目标站。</p>
+          </li>
+          <li>
+            <b>双端确认</b>
+            <p>车端空载、工位有箱，登记一次交付记录。</p>
+          </li>
+        </ol>
+      </section>
+      <footer class="wrap">
+        <div class="footer-brand">
+          <i class="logo"></i><b>递格 T1</b><span>产品概念设计 · V3.0</span>
+        </div>
+        <div class="footer-links">
+          <a href="./deck/#/1">产品演示 ↗</a
+          ><a href="./deck/#/presenter/1">演讲者备注 ↗</a
+          ><a href="./engineering.html">工程手册 ↗</a
+          ><button id="print">打印海报 ↗</button>
+        </div>
+      </footer>
+    </main>
+    <script type="module" src="./deck/lab/relay.js"></script>
+    <script type="module" src="./poster.js"></script>
+  </body>
+</html>

@@ -1,0 +1,562 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>递格 T1 · 逐页工程备注</title><link rel="icon" href="./deck/media/icon.png"><link rel="stylesheet" href="./deck/media/type.css"><style>* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  --paper: #fbfaf3;
+  --ink: #243329;
+  --muted: #526755;
+  --rule: #b8c4b5;
+  margin: 0;
+  background: #e8ebdf;
+  color: var(--ink);
+  font:
+    400 15px/1.7 "Relay CJK",
+    "Microsoft YaHei",
+    sans-serif;
+}
+nav,
+section {
+  max-width: 900px;
+  margin: 20px auto;
+  background: var(--paper);
+  padding: 28px 40px;
+}
+nav {
+  border-top: 5px solid #d56c3d;
+}
+nav > div,
+section header,
+section footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+nav h1 {
+  font-size: 36px;
+  margin: 15px 0;
+}
+a {
+  color: #8d482c;
+  text-underline-offset: 3px;
+}
+button {
+  font: inherit;
+  color: var(--ink);
+  padding: 4px 10px;
+  background: transparent;
+  border: 1px solid #7e907d;
+  cursor: pointer;
+}
+summary {
+  cursor: pointer;
+}
+.toc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 18px;
+  margin: 10px 0;
+}
+section header,
+section footer {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 12px;
+  color: var(--muted);
+}
+section header b {
+  font-size: 16px;
+  color: var(--ink);
+}
+h3 {
+  font-size: 27px;
+  line-height: 1.35;
+  letter-spacing: -0.035em;
+  margin: 22px 0 12px;
+}
+p {
+  margin: 10px 0;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 18px 0;
+  table-layout: fixed;
+  font-size: 14px;
+}
+th,
+td {
+  padding: 9px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+thead {
+  background: #273a2e;
+  color: #f1f5e9;
+}
+th:first-child,
+td:first-child {
+  width: 24%;
+  font-weight: 650;
+}
+section footer {
+  margin-top: 21px;
+  border-top: 1px solid var(--rule);
+  border-bottom: 0;
+  padding-top: 8px;
+}
+.toc a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #db7445;
+}
+@media (max-width: 620px) {
+  nav,
+  section {
+    margin: 9px;
+    padding: 16px;
+  }
+  .toc {
+    grid-template-columns: 1fr;
+  }
+  nav > div {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 23px;
+  }
+  th,
+  td {
+    padding: 6px;
+    font-size: 12px;
+  }
+  section footer {
+    font-size: 10px;
+  }
+}
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  body {
+    background: var(--paper);
+  }
+  nav {
+    display: none;
+  }
+  section {
+    position: relative;
+    margin: 0;
+    width: 210mm;
+    height: 296.8mm;
+    max-width: none;
+    padding: 14mm 16mm;
+    break-after: page;
+  }
+  section:last-child {
+    break-after: auto;
+  }
+  section header {
+    font-size: 9pt;
+    padding-bottom: 3mm;
+  }
+  section header b {
+    font-size: 13pt;
+  }
+  h3 {
+    font-size: 22pt;
+    margin: 8mm 0 4mm;
+  }
+  p {
+    font-size: 10.8pt;
+    line-height: 1.7;
+  }
+  table {
+    font-size: 10.5pt;
+    line-height: 1.65;
+    margin: 6mm 0;
+  }
+  td,
+  th {
+    padding: 3mm 2.7mm;
+  }
+  section footer {
+    position: absolute;
+    inset: auto 16mm 12mm;
+    font-size: 8pt;
+  }
+  section footer a {
+    display: none;
+  }
+}
+</style></head><body><nav><div><a href="./">← 产品海报</a><a href="./deck/#/1">10 页演示 ↗</a><button onclick="window.print()">打印工程备注</button></div><h1>逐页工程备注</h1><details><summary>跳转到章节</summary><div class="toc"><a href="#n1">01　这次评审要回答什么</a><a href="#n2">02　三处站点与四个对接口</a><a href="#n3">03　底盘、升降轴和牵引接口</a><a href="#n4">04　近场感知、执行与放行</a><a href="#n5">05　五个动作与双端回执</a><a href="#n6">06　叫料、回空与队列规则</a><a href="#n7">07　故障处置与台账一致性</a><a href="#n8">08　单车节拍预算</a><a href="#n9">09　电量、充电与现场可用时间</a><a href="#n10">10　十周试点与签收条件</a></div></details></nav><main><section id="n1"><header><b>递格 T1</b><span>工程备注　/　01 · 10</span></header><h3>这次评审要回答什么</h3>
+<p>递格 T1 面向同楼层电子装配区：操作员在工位叫料，备料员把指定料箱绑定到工单，车端识别站点与箱号，牵引整箱到工位；空箱由同一台车回收。今天不证明“已经做到”，而是把产品定义、工程预算和验收口径摆到一张桌上，让样机阶段知道先测什么。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>本次评审口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>产品</td>
+<td>1 台 T1、1 处双接口备料站（P 出料 / R 回空）、2 个单接口装配工位（A / B）、1 套接触式充电座。</td>
+</tr>
+<tr>
+<td>载具</td>
+<td>600 × 400 mm 周转箱 + 可重复使用转接托盘；整箱搬运，备料员负责拣选与装箱。</td>
+</tr>
+<tr>
+<td>交付</td>
+<td>车端确认空载、站端确认同一预约下有箱、牵引头回零，调度记录一次完成事件。</td>
+</tr>
+<tr>
+<td>成熟度</td>
+<td>产品概念与工程预算。主视觉为概念渲染，全部数字待样机、量具及现场试验确认。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>讲解提示</strong>　整场按一笔补料工单展开：先看线怎么布，再看车怎么动、单怎么派、错了怎么收，最后看拿什么验收。所有“目标值”都不要说成“实测值”。</p>
+<footer><span>V3.0　/　产品概念设计 · 指标待样机验证</span><a href="./deck/#/presenter/1">对应演讲者视图 ↗</a></footer></section>
+<section id="n2"><header><b>递格 T1</b><span>工程备注　/　02 · 10</span></header><h3>三处站点与四个对接口</h3>
+<p>备料站 S 集成出料口 P 与回空口 R，两口分别设置导向轨、限位和占位检测。工位 A、B 各有一个单箱收发口。空箱有独立去向，备料员可以在回空时继续备下一箱。首轮配 6 组箱盘，用于备料、在途、工位与回收周转。</p>
+<table>
+<thead>
+<tr>
+<th>布置项</th>
+<th>设计输入与投用条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>路线</td>
+<td>基准单程 50 m。双向共用通道由调度占用区段。先验证单车，现场记录让行与交叉口等待。</td>
+</tr>
+<tr>
+<td>通行</td>
+<td>单向直道初步预留 ≥1.2 m，原地转向区 ≥1.6 × 1.6 m。最终净空、保护区与限速由风险评估确定。</td>
+</tr>
+<tr>
+<td>地面与环境</td>
+<td>室内干燥硬地面，运输坡度 ≤2°、接缝宽 ≤5 mm。站口地面调平。环境 5–35 °C、30%–80% RH，无凝露。</td>
+</tr>
+<tr>
+<td>站点信号</td>
+<td>每个接口独立上报站号、占位、到位、故障、时间戳与预约令牌。P、R 在调度里使用不同接口编号。</td>
+</tr>
+<tr>
+<td>人员分工</td>
+<td>备料员绑定物料与箱码、处理返回空箱；操作员发起补料、用完确认与回空；班组长处理冲突与异常放行。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>勘测输出</strong>　冻结工位坐标、对接口高度、充电座位置和人车交叉点。平面图只用于布置评审，站距以现场量测为准。</p>
+<footer><span>V3.0　/　产品概念设计 · 指标待样机验证</span><a href="./deck/#/presenter/2">对应演讲者视图 ↗</a></footer></section>
+<section id="n3"><header><b>递格 T1</b><span>工程备注　/　03 · 10</span></header><h3>底盘、升降轴和牵引接口</h3>
+<p>T1 以箱体的 400 mm 短边进站。正锁牵引钩啮合转接托盘，车与站两侧持续支承托盘。车体制动、站口预约和高度对齐后才允许伸出。运输前收回伸缩轴、锁定托盘并降低重心。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>首版数值与定义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>车体与质量</td>
+<td>820 × 640 × 1,150 mm（长 × 宽 × 高，含立柱，托台收回），空车含电池约 110 kg。</td>
+</tr>
+<tr>
+<td>箱与物料</td>
+<td>箱底 600 × 400 mm，箱高 ≤280 mm。总重 ≤20 kg，含箱、物料和托盘；若空箱与托盘合计 4 kg，可装物料 16 kg。</td>
+</tr>
+<tr>
+<td>转接托盘</td>
+<td>620 × 420 × 25 mm。站口净宽 ≥450 mm，站内有效导轨深度 ≥650 mm。托盘入口设导向面，出厂用通止规复核配合。</td>
+</tr>
+<tr>
+<td>两个执行轴</td>
+<td>垂直行程 500 mm，对接面 350–850 mm；水平伸缩 680 mm。额载台架目标：升降 ≤100 mm/s、推拉 ≤180 mm/s，速度按载荷与站高标定。</td>
+</tr>
+<tr>
+<td>偏载与锁止</td>
+<td>初样验证重心投影距盘中心纵、横各 ≤40 mm 的组合，覆盖最低与最高站位。升降保持制动、运输锁销和双到位开关均须验证。</td>
+</tr>
+<tr>
+<td>移动底盘</td>
+<td>双轮差速，驱动电机 2 × 350 W。空载上限 1.2 m/s、额载上限 1.0 m/s，靠站 ≤0.10 m/s。运输位承载面高 350 mm。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>验证重点</strong>　20 kg 是箱盘总重，不是载重余量。台架分别记录不同站高、偏载与磨损条件下的拉力、电流和卡滞位置，完成防坠、失电支承与耐久试验后冻结接口。</p>
+<footer><span>V3.0　/　产品概念设计 · 指标待样机验证</span><a href="./deck/#/presenter/3">对应演讲者视图 ↗</a></footer></section>
+<section id="n4"><header><b>递格 T1</b><span>工程备注　/　04 · 10</span></header><h3>近场感知、执行与放行</h3>
+<p>地图导航先把车带到预对接点。相机识别站点 AprilTag，读取料箱 Data Matrix 码，再用托盘边缘深度校正位置。视觉、工单与站口信号一致后，底盘锁止，控制器才能发出取放请求。</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>配置、门槛与验证方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>算力与采样</td>
+<td>八核 ARM64、16 GB 内存、128 GB 存储。1 套 RGB-D，彩色 1280 × 720 / 30 fps，位姿输出 ≥10 Hz。微控制器监视轴与联锁 ≥100 Hz，驱动器经 CAN 总线连接。</td>
+</tr>
+<tr>
+<td>几何放行</td>
+<td>横向偏差绝对值 ≤5 mm、高度 ≤3 mm、偏航 ≤1°，三项逐次检查。失去视觉或超差时退至预对接点，最多再试 2 次。</td>
+</tr>
+<tr>
+<td>载荷核验</td>
+<td>四点称重合计量程 0–30 kg，读数分辨率 0.1 kg，以标准砝码校准。钩锁、位置、重量同时符合预期才允许走车。</td>
+</tr>
+<tr>
+<td>导航与保护</td>
+<td>对角布置 2 台二维安全激光扫描器，融合轮速与惯性测量。安全扫描器、急停、安全控制器和驱动使能构成独立保护链。制动与保护距离按现场风险验证。</td>
+</tr>
+<tr>
+<td>视觉留出集</td>
+<td>按站点与采集日分组，空位、占位各 200 张，覆盖逆光、遮挡和最高箱位。该批有物判空目标 0/200，空位识别目标 ≥190/200。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>实现参考</strong>　<a href="https://april.eecs.umich.edu/software/apriltag">密歇根大学 AprilTag 项目</a> 描述标记的相对位姿估计；<a href="https://api.nav2.org/nav2-rolling/html/md_nav2_docking_README.html">Nav2 对接框架</a> 给出分阶段靠站与反馈控制的参考结构。表内性能属于 T1 拟定目标。</p>
+<footer><span>V3.0　/　产品概念设计 · 指标待样机验证</span><a href="./deck/#/presenter/4">对应演讲者视图 ↗</a></footer></section>
+<section id="n5"><header><b>递格 T1</b><span>工程备注　/　05 · 10</span></header><h3>五个动作与双端回执</h3>
+<p>可以切换补料和回空，也可注入目标站占用或回执丢失。拖动时间轴停在任意阶段，切换俯视看空间关系。画面把 20 s 循环压缩呈现，时间和间距只用于说明原理，不作为节拍实测。</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>区间</th>
+<th>请求、反馈与下一步条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>识站对位</td>
+<td>0–20%</td>
+<td>锁定源、目的接口，核对站号、箱号和预约令牌。目标位姿满足三差门槛，制动后调整升降轴。</td>
+</tr>
+<tr>
+<td>牵引装载</td>
+<td>20–47%</td>
+<td>牵引钩啮合托盘，编码器与电流监测拉入。重量、钩锁与到位均有效后锁箱；跨站保持车、站双侧支承。</td>
+</tr>
+<tr>
+<td>载箱转运</td>
+<td>47–77%</td>
+<td>伸缩回零并降到 350 mm 运输位。遇占道先受控停等，具备已验证替代路线时重新规划。</td>
+</tr>
+<tr>
+<td>推箱入位</td>
+<td>77–97%</td>
+<td>再读目标站号、占位与预约。工位被占则停在等待位；清空后重新核验，再把托盘推入导轨。</td>
+</tr>
+<tr>
+<td>双端回执</td>
+<td>97–100%</td>
+<td>车端空载、站端到位、牵引头回零均成立，写入持久化完成事件；业务端按同一工单与事件序号确认。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>现场讲解</strong>　在“异常演练”选目标站占用，观察车辆停在入站前；选回执丢失，箱子已经在工位，补传只更新台账。回空时实物沿反向路线进入备料站 R 口。</p>
+<footer><span>V3.0　/　产品概念设计 · 指标待样机验证</span><a href="./deck/#/presenter/5">对应演讲者视图 ↗</a></footer></section>
+<section id="n6"><header><b>递格 T1</b><span>工程备注　/　06 · 10</span></header><h3>叫料、回空与队列规则</h3>
+<p>两个工位都可以提交任务。本地叫料页支持建单、查看预计到站、取消待执行订单和查询最近交付记录。补料与回空共用同一台车，调度接单时检查载具、站口和电量。预计到站由剩余距离、队列和站口状态滚动更新。</p>
+<table>
+<thead>
+<tr>
+<th>业务情况</th>
+<th>调度策略</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>补料</td>
+<td>工位选择料号与数量，备料员扫码绑定箱号。S-P 有箱、目标站空闲且预留成功后派车。</td>
+</tr>
+<tr>
+<td>回空</td>
+<td>操作员点“用料结束”并核对箱号。源工位有该箱、S-R 空闲才接单。取箱后按已登记的箱盘皮重模板复核，容差在标定后写入配置。</td>
+</tr>
+<tr>
+<td>优先级</td>
+<td>常规与紧急两级，同级按建单时间排队。常规等待满 10 分钟升一级，保留原始排队时间。已取箱任务运行至有据可查的交接状态。</td>
+</tr>
+<tr>
+<td>预约</td>
+<td>对源与目的接口进行原子预约。取箱前租期 60 s，每 10 s 续租；取箱后目的口持续保留，直至双端确认或人工对账关闭任务。</td>
+</tr>
+<tr>
+<td>取消与缺料</td>
+<td>取箱前可撤销并释放接口。取箱后转入人工协调的退回或改派流程，必须重新预约并核对新目的地。未备好、缺料及优先级更改写入日志。</td>
+</tr>
+<tr>
+<td>回充</td>
+<td>25% 电量预警。派单前估算完成作业并到达充电座后的电量，预计低于 20% 时优先回充。异常载箱由人员确认可用卸载位。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>业务接口</strong>　工单包含 order_id、box_id、source_port、target_port、priority 和状态版本号。状态顺序为排队、预约、取箱、在途、待交接、已交付。遇异常保留物理阶段与责任人。</p>
+<footer><span>V3.0　/　产品概念设计 · 指标待样机验证</span><a href="./deck/#/presenter/6">对应演讲者视图 ↗</a></footer></section>
+<section id="n7"><header><b>递格 T1</b><span>工程备注　/　07 · 10</span></header><h3>故障处置与台账一致性</h3>
+<p>车端先保存物理结果和待发送事件，再请求业务系统登记。站控接有线以太网与 24 V 数字输入输出，车端通过 5 GHz Wi-Fi 连调度。业务建单、查单和回执采用 HTTPS / JSON。安全控制独立运行。</p>
+<table>
+<thead>
+<tr>
+<th>故障或边界</th>
+<th>受控行为与恢复依据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>错箱或错站</td>
+<td>保持箱体原位并提示不一致字段。备料员核对工单与实物，重扫后重新校验。</td>
+</tr>
+<tr>
+<td>占位或站态过期</td>
+<td>站控状态目标刷新 ≥5 Hz。移载前要求数据年龄 ≤500 ms、预约匹配且对端应答；超时留在等待位。该时限只用于业务交接。</td>
+</tr>
+<tr>
+<td>卡滞或半程掉电</td>
+<td>停止轴运动并保持制动与支承，保存轴位、重量和钩锁状态。维护员核对跨站实物，再决定继续或回收。</td>
+</tr>
+<tr>
+<td>在途失联</td>
+<td>受控停车，冻结新交接。恢复后核对工单、车上箱号与两端占位；物理状态不确定时转人工。</td>
+</tr>
+<tr>
+<td>回执丢失</td>
+<td>本地待发队列重传同一 order_id + event_seq。服务端以该组合设唯一约束并返回已有结果，物理推箱动作不重做。</td>
+</tr>
+<tr>
+<td>可追溯性</td>
+<td>事件含时间、工单、箱号、站口、阶段、两端信号与结果。业务记录目标保留 30 天，故障前后传感摘要目标保留 7 天，实际留存按现场容量核定。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>复位责任</strong>　急停、失电或跨站卡滞由现场责任人确认保护链复位、机械受力及实物归属。重新上电后先对账，再恢复调度。</p>
+<footer><span>V3.0　/　产品概念设计 · 指标待样机验证</span><a href="./deck/#/presenter/7">对应演讲者视图 ↗</a></footer></section>
+<section id="n8"><header><b>递格 T1</b><span>工程备注　/　08 · 10</span></header><h3>单车节拍预算</h3>
+<p>D 为单程米数，v 为含加减速的往返平均行驶速度 0.8 m/s，w 为常规握手与站口等待秒数。一个补料循环含载箱去程和空车返程，两端对位与取放合计 40 s。85% 时间利用率为偶发让行和小停顿留量；充电与计划停线另计。</p>
+<table>
+<thead>
+<tr>
+<th>条件或公式</th>
+<th>对应结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>通式</td>
+<td>T = 2D / 0.8 + 40 + w 秒；Q = 3600 × 0.85 / T。</td>
+</tr>
+<tr>
+<td>单程 25 m，等待 15 s</td>
+<td>循环 117.5 s，约 26.0 箱/h。</td>
+</tr>
+<tr>
+<td>单程 50 m，等待 15 s</td>
+<td>循环 180 s，约 17.0 箱/h：125 s 行驶、40 s 两端取放、15 s 等待。</td>
+</tr>
+<tr>
+<td>单程 75 m，等待 15 s</td>
+<td>循环 242.5 s，约 12.6 箱/h。</td>
+</tr>
+<tr>
+<td>回空与多工位混合</td>
+<td>独立回空工单另计取放、绕行与排队。试点对补料、回空分别计数，再按各自占用时间核算班次能力。</td>
+</tr>
+<tr>
+<td>采样</td>
+<td>单程 50 m、额定总重、等待条件一致，连续 2 h 做 3 轮，每轮目标 ≥34 箱。导出行驶、对位、轴动作、占位等待和回执时长。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>讲解提示</strong>　拖动距离与等待时间，观察时间条和每小时交付量同时变化。把现场量得的参数代入，以实际工位每小时用箱量判断是否够用。</p>
+<footer><span>V3.0　/　产品概念设计 · 指标待样机验证</span><a href="./deck/#/presenter/8">对应演讲者视图 ↗</a></footer></section>
+<section id="n9"><header><b>递格 T1</b><span>工程备注　/　09 · 10</span></header><h3>电量、充电与现场可用时间</h3>
+<p>电池用 51.2 V / 30 Ah 磷酸铁锂电池包，标称 1,536 Wh。从 90% 放至 20% 的可用预算为 1,075.2 Wh。以 165 W 电池端平均功耗估计，连续循环约 6.52 h，作业目标取 ≥6 h。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>计算或条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>功率分摊</td>
+<td>底盘驱动平均 94 W，感知和计算 36 W，间歇取放 20 W，控制与损耗 15 W，合计 165 W。额定电机功率用于选型，平均功耗按占空比测量。</td>
+</tr>
+<tr>
+<td>六小时门槛</td>
+<td>1,075.2 Wh ÷ 6 h = 179.2 W。若实测平均功耗高于预算，重测坡度、等待和载荷分布并修订可用时长。</td>
+</tr>
+<tr>
+<td>回充目标</td>
+<td>自动接触式充电，充电器上限 58.4 V / 15 A。20% 至 90% 需补约 21 Ah，理想恒流 1.4 h，含控制与收尾目标 ≤2 h。</td>
+</tr>
+<tr>
+<td>测试工况</td>
+<td>20–25 °C，额载 20 kg，单程 50 m、600 mm 对接面，连续 3 次运行和回充。每次工作 ≥6 h，每次回充 ≤2 h。</td>
+</tr>
+<tr>
+<td>班次安排</td>
+<td>按可用电量、待执行任务和到充电座距离派单；充电期间订单排队。达到 90% 进入可调度状态，低温、老化及保护动作单独记录。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>测量方法</strong>　从电池端采样电压、电流与荷电状态，同步记录工单数量与空载返程。续航验收使用完整曲线，额载单程速度上限与平均功耗分别核对。</p>
+<footer><span>V3.0　/　产品概念设计 · 指标待样机验证</span><a href="./deck/#/presenter/9">对应演讲者视图 ↗</a></footer></section>
+<section id="n10"><header><b>递格 T1</b><span>工程备注　/　10 · 10</span></header><h3>十周试点与签收条件</h3>
+<p>第 1–2 周测场地、冻结站口并记录一周人工基线；第 3–5 周做偏载、卡滞、制动和不同站高台架验证；第 6–8 周联调车、站、调度与回充；第 9–10 周在已评审的受控区域完成试点。</p>
+<table>
+<thead>
+<tr>
+<th>验证项</th>
+<th>样本与拟定通过条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>完整补料</td>
+<td>A、B 各 50 单，覆盖 5、12、20 kg 总重。全部派发单纳入分母，100 单中 ≥98 单无人工介入完成；错箱、错站及重复交付均为 0。</td>
+</tr>
+<tr>
+<td>空箱回收</td>
+<td>两工位各 15 单，覆盖 R 口占用、回空排队和补料插单。共 30 单均进入正确回收口，台账实物一致；单列回空完成率。</td>
+</tr>
+<tr>
+<td>对接精度</td>
+<td>站高 350 / 600 / 850 mm × 总重 5 / 20 kg × 每组 20 次，共 120 次。外部量具测首次稳定停靠点，各组绝对误差 P95 达横向 ≤5 mm、高度 ≤3 mm、偏航 ≤1°。</td>
+</tr>
+<tr>
+<td>异常与幂等</td>
+<td>错码、占位、卡滞、掉电、断网各 10 次，覆盖跨站与已交付待回执。恢复后账物一致，重复物理交付为 0。</td>
+</tr>
+<tr>
+<td>节拍与电源</td>
+<td>每轮 2 h 基准补料完成 ≥34 箱，共 3 轮。按上一页工况做 3 次续航与回充，核对实测电量和时间。</td>
+</tr>
+<tr>
+<td>安全与结项</td>
+<td>合格人员按风险评估验证急停、保护区、制动、失电支承及复位。关闭高风险项后进入现场试运行，班组长、设备工程师和项目负责人共同签收。</td>
+</tr>
+</tbody>
+</table>
+<p><strong>试点收益</strong>　对比人工基线的每单离岗分钟数、每百单介入数及叫料到货 P95。<a href="https://www.iso.org/standard/83545.html">ISO 3691-4:2023 的官方范围说明</a> 可供项目负责人判断工业无人车辆系统相关安全要求的适用性。</p>
+<footer><span>V3.0　/　产品概念设计 · 指标待样机验证</span><a href="./deck/#/presenter/10">对应演讲者视图 ↗</a></footer></section></main></body></html>
